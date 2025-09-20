@@ -28,8 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I’m Shreyash Thorat, from Mumbai, India. I completed my undergrad in Mechanical Engineering and have developed a strong foundation of robotics, manufacturing, d and hands on problem-solving through various projects.
+Hi, I’m Shreyash Thorat, from Mumbai, India. I completed my undergrad in Mechanical Engineering and have developed a strong foundation of robotics, manufacturing  and hands on problem-solving through various projects.
 
 This fall, I’m beginning my M.S. in Mechanical Engineering at USC, where I aim to further explore robotics and advanced system design, building on my foundation in mechanical systems and engineering principles.
 
-I’m someone who loves building projects and geeking out over new ideas, but also knows how to balance work and having a good time. Outside of studies, I’m all about traveling, playing table tennis, basketball, swimming, and beach volleyball but honestly, I'm always be down to try out anything new and fun. Big fan of random plans, chill hangouts, and making the most of every day.
+I’m someone who loves building projects and geeking out over new ideas, but I also know how to balance hard work with having a good time. Outside of engineering, I’m passionate about traveling and staying active through table tennis, basketball, swimming, and volleyball though I’m always up for trying something new and fun. A big fan of spontaneous plans, relaxed hangouts, or a fresh challenge, I enjoy making the most of every day.

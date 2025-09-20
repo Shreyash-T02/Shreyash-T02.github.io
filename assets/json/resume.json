@@ -57,7 +57,7 @@
   "education": [
     {
       "institution": "University of Southern California, Viterbi School of Engineering",
-      "location":  "Los Angeles, California, USA",
+      "location":  "Los Angeles, Ca",
       "url": "",
       "area": "Mechanical Engineering",
       "studyType": "Master of Science",
@@ -95,48 +95,7 @@
     }
   ],
   "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
+    
   ],
   "publications": [
     {
@@ -148,18 +107,23 @@
     }
   ],
   "skills": [
+   {
+      "name": "Software & Simulation",
+      "level": "",
+      "icon": "",
+      "keywords": ["MATLAB", "Simulink", "Python", "Gazebo", "SolidWorks", "ANSYS", "Fusion 360"]
+    },
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Robotics Tools & Libraries",
+      "level": "",
+      "icon": "",
+      "keywords": ["ROS2", "ROS1", "Gazebo", "Linux", "GitHub"]
+    },
+    {
+      "name": "Mechanical Engineering", 
+      "level": "",
+      "icon": "",
+      "keywords": ["CAD Design", "FEA", "CNC Machining", "Topology Optimization", "Additive Manufacturing", "Mechanics", "Robot Design", "Failure Analysis"] 
     }
   ],
   "languages": [
