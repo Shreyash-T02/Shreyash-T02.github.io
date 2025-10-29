@@ -1,24 +1,22 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Package Handling Robot
+description: Robotic manipulator with 3 kg payload and 700 mm reach for assembly line automation
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: Passion Project
 related_publications: true
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Introduction**
 
     ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
+   In this project, I have designed a 5DOF Package handling robot to be deployed at the end 
+   of an assembly line in order to boost productivity. The robot is equipped with an electromagnetic 
+   end effector to efficiently and accurately move the packed product(paint cans) to its appropriate     
+   location. The robot is designed to be capable of moving weights up to 3 kg with a maximum reach 
+   of 700 mm. The electrical and mechanical peripherals are designed accordingly. The CAD 
+   model of the robot is designed in Solidworks and have controlled and simulated the robot using 
+   ROS2 and MoveIt.
     ---
 
 <div class="row">
