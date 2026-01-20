@@ -8,18 +8,8 @@ importance: 2
 category: work
 giscus_comments: true
 ---
+In this project, I have designed a 5DOF Package handling robot to be deployed at the end  of an assembly line in order to boost productivity. The robot is equipped with an electromagnetic end effector to efficiently and accurately move the packed product(paint cans) to its appropriate  location.
 
-Description
-
--> Designed a 5-DOF robotic manipulator for automated pick-and-place operations with a 700 mm reach and 3 kg payload capacity.
-
--> Performed torque and power calculations for each joint to support motor selection, considering payload, link mass, and dynamic loading; planned electronics packaging for motors, drivers, and controllers.
-
--> Performed Inverse Kinematics (IK) analysis to calculate joint angles, define the workspace, and avoid kinematic singularities.
-
--> Integrated ROS 2 with MoveIt for motion planning, trajectory generation, and joint control.
-
--> Simulated the robotic arm in Gazebo to validate collision-free paths and smooth pick-and-place execution in a industrial cell environment.
 
 
 <div class="row">
@@ -34,7 +24,7 @@ Description
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -45,14 +35,17 @@ Description
     TMechanical build 
 </div>
 
-Technologies Used:
+Description:
 
--> SolidWorks (Mechanical Design & Assembly)
--> ROS 2
--> MoveIt Motion Planning Framework
--> Gazebo Simulation
--> Inverse Kinematics & Workspace Analysis
--> Robot Control & Trajectory Planning(Waypoint control)
+-> Designed a 5-DOF robotic manipulator for automated pick-and-place operations with a 700 mm reach and 3 kg payload capacity.
+
+-> Performed torque and power calculations for each joint to support motor selection, considering payload, link mass, and dynamic loading; planned electronics packaging for motors, drivers, and controllers.
+
+-> Performed Inverse Kinematics (IK) analysis to calculate joint angles, define the workspace, and avoid kinematic singularities.
+
+-> Integrated ROS 2 with MoveIt for motion planning, trajectory generation, and joint control.
+
+-> Simulated the robotic arm in Gazebo to validate collision-free paths and smooth pick-and-place execution in a industrial cell environment.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -64,6 +57,13 @@ Technologies Used:
 </div>
 <div class="caption">
 </div>
+Technologies Used:
 
+-> SolidWorks (Mechanical Design & Assembly)
+-> ROS 2
+-> MoveIt Motion Planning Framework
+-> Gazebo Simulation
+-> Inverse Kinematics & Workspace Analysis
+-> Robot Control & Trajectory Planning(Waypoint control)
 
 {% endraw %}
