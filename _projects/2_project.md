@@ -8,7 +8,7 @@ importance: 2
 category: work
 giscus_comments: true
 ---
-In this project, I have designed a 5DOF Package handling robot to be deployed at the end  of an assembly line in order to boost productivity. The robot is equipped with an electromagnetic end effector to efficiently and accurately move the packed product(paint cans) to its appropriate  location.
+In this project, I have designed a Package handling robot to be deployed at the end  of an assembly line in order to boost productivity. The robot is equipped with an electromagnetic end effector to efficiently and accurately move the packed product(paint cans) to its appropriate  location.  
 
 
 
