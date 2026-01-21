@@ -5,7 +5,7 @@
     "image": "",
     "email": "thorats@usc.edu",
     "phone": "(213) 829-1418",
-    "url": "https://alshedivat.github.io/al-folio/",
+    "url": "https://shreyash-t02.github.io/",
     "summary": "Graduate student in Mechanical Engineering at the University of Southern California with strong foundations in robotics, autonomous systems, and AI/ML. Experienced in design, modeling, simulation, and system integration with a proven record of leading projects and contributing to international Formula Student competitions.",
     "location": {
       "address": "325 West Adams Blvd",
@@ -22,10 +22,45 @@
       }
     ]
   },
+  "projects": [
+    {
+      "name": "Model Rocket with Recovery System and Thrust Vectoring",
+      "summary": "Designed and developed a model rocket with an integrated recovery system and thrust vectoring for enhanced performance and stability.",
+      "highlights": [ "Thrust vectoring control","PID Control","CAD Design","3D-Printing"],
+      "startDate": "2023-07-01",
+      "endDate": "2024-05-01",
+      "url": ""
+    },
+    {
+      "name": "Classification of Pressure Vessels using ANN",
+      "summary": "Built a dataset of vessel images and implemented CNN-based classification to distinguish between horizontal, vertical, and spherical vessels for inspection tasks",
+      "highlights": ["Image preprocessing", "CNN model building", "Hyperparameter tuning"],
+      "startDate": "2023-01-01",
+      "endDate": "2023-06-01",
+      "url": ""
+    },
+    {
+      "name": "Real-Time Surveillance Quadcopter for Flood Rescue",
+      "summary": "Led a team project to design and build a quadcopter for real-time aerial surveillance in flood rescue operationss.",
+      "highlights": ["Team leadership", "Sensor integration", "ArduPilot flight control"],
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "url": ""
+    },
+    {
+      "name": "Automatic Trash Bin using Arduino",
+      "summary": "Designed and implemented a low-cost automatic trash bin using Arduino microcontroller and sensors for automated lid operation.",
+      "highlights": ["Arduino programming"],
+      "startDate": "2021-01-01",
+      "endDate": "2021-06-01",
+      "url": ""
+    }
+   
+  ],
   "work": [
     {
       "name": "GreenDzine Technologies Pvt Ltd",
-      "position": "Mechanical Desifn Engineer",
+      "position": "Mechanical Design Engineer",
       "url": "",
       "startDate": "2024-01-01",
       "endDate": "1955-05-05",
@@ -54,22 +89,6 @@
       ]
     }
   ],
-  "education": [
-    {
-      "institution": "University of Southern California, Viterbi School of Engineering",
-      "location":  "Los Angeles, Ca",
-      "url": "",
-      "area": "Mechanical Engineering",
-      "studyType": "Master of Science",
-      "startDate": "2025-08-01",
-      "endDate": "2027-05-01",
-      "score": "",
-      "courses": ["Linear Algebra in Engineering Sciences",
-        "Foundations of Robotics"
-    ]
-    }
-    
-  ],
   
   "awards": [
     {
@@ -94,6 +113,23 @@
       "summary": "Achieved 4th place in cost and manufacturing event among international teams."
     }
   ],
+  "education": [
+    {
+      "institution": "University of Southern California, Viterbi School of Engineering",
+      "location":  "Los Angeles, Ca",
+      "url": "",
+      "area": "Mechanical Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2025-08-01",
+      "endDate": "2027-05-01",
+      "score": "",
+      "courses": ["Linear Algebra in Engineering Sciences",
+        "Foundations of Robotics"
+    ]
+    }
+    
+  ],
+  
   "certificates": [
     
   ],
@@ -147,40 +183,6 @@
       ]
     }
   ],
-  "references": [],
-  "projects": [
-    {
-      "name": "Model Rocket with Recovery System and Thrust Vectoring",
-      "summary": "Designed and developed a model rocket with an integrated recovery system and thrust vectoring for enhanced performance and stability.",
-      "highlights": [ "Thrust vectoring control","PID Control","CAD Design","3D-Printing"],
-      "startDate": "2023-07-01",
-      "endDate": "2024-05-01",
-      "url": ""
-    },
-    {
-      "name": "Classification of Pressure Vessels using ANN",
-      "summary": "Built a dataset of vessel images and implemented CNN-based classification to distinguish between horizontal, vertical, and spherical vessels for inspection tasks",
-      "highlights": ["Image preprocessing", "CNN model building", "Hyperparameter tuning"],
-      "startDate": "2023-01-01",
-      "endDate": "2023-06-01",
-      "url": ""
-    },
-    {
-      "name": "Real-Time Surveillance Quadcopter for Flood Rescue",
-      "summary": "Led a team project to design and build a quadcopter for real-time aerial surveillance in flood rescue operationss.",
-      "highlights": ["Team leadership", "Sensor integration", "ArduPilot flight control"],
-      "startDate": "2022-01-01",
-      "endDate": "2022-06-01",
-      "url": ""
-    },
-    {
-      "name": "Automatic Trash Bin using Arduino",
-      "summary": "Designed and implemented a low-cost automatic trash bin using Arduino microcontroller and sensors for automated lid operation.",
-      "highlights": ["Arduino programming"],
-      "startDate": "2021-01-01",
-      "endDate": "2021-06-01",
-      "url": ""
-    }
-   
-  ]
+  "references": []
+  
 }
