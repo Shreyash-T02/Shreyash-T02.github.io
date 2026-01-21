@@ -426,7 +426,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/shreyash-thorat", "_blank");
+          window.open("https://www.linkedin.com/in/shreyash-thorat-6b372b225", "_blank");
         },
       },{
         id: 'social-custom_social',
