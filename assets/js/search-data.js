@@ -422,18 +422,11 @@ ninja.data = [{
           window.open("https://github.com/Shreyash-T02", "_blank");
         },
       },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
+        id: 'social-linkedin_url',
+        title: 'Linkedin_url',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/shreyash-thorat-6b372b225", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("", "_blank");
         },
       },{
       id: 'light-theme',
