@@ -65,5 +65,3 @@ Technologies Used:
 -> Gazebo Simulation
 -> Inverse Kinematics & Workspace Analysis
 -> Robot Control & Trajectory Planning(Waypoint control)
-
-{% endraw %}
