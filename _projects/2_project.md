@@ -5,7 +5,7 @@ description: Design and control of 5 DOF Robotic Manipulator with electro magnet
 subtitle: Passion Project | September 2024 – January 2025 | Mumbai, India
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: Featured Projects
 ---
 In this project, I have designed a Package handling robot to be deployed at the end  of an assembly line in order to boost productivity. The robot is equipped with an electromagnetic end effector to efficiently and accurately move the packed product(paint cans) to its appropriate  location.  
 
