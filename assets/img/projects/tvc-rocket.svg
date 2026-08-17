@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Model rocket with active thrust vector control, gimbal geometry, and measured thrust curve">
+  <defs>
+    <linearGradient id="tvbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1220"/>
+      <stop offset="100%" stop-color="#1b1a2e"/>
+    </linearGradient>
+    <linearGradient id="tvflame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#fb923c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="45%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#7c8794"/>
+    </linearGradient>
+    <pattern id="tvgrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#1f2438" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#tvbg)"/>
+  <rect width="1200" height="750" fill="url(#tvgrid)"/>
+
+  <!-- header -->
+  <text x="60" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" fill="#fb923c" letter-spacing="3">TVC · PID · RECOVERY</text>
+  <text x="60" y="132" font-family="Georgia,serif" font-size="44" fill="#e2e8f0">Thrust-Vectored Model Rocket</text>
+  <line x1="60" y1="158" x2="270" y2="158" stroke="#38bdf8" stroke-width="4"/>
+
+  <!-- rocket, tilted slightly -->
+  <g transform="rotate(-9 330 430)">
+    <!-- nose cone -->
+    <path d="M330 208 L300 300 L360 300 Z" fill="#f87171"/>
+    <!-- body tube -->
+    <rect x="300" y="300" width="60" height="228" fill="url(#body)"/>
+    <!-- parachute bay -->
+    <rect x="300" y="318" width="60" height="66" fill="#1e293b" opacity="0.55"/>
+    <circle cx="330" cy="351" r="19" fill="none" stroke="#34d399" stroke-width="3"/>
+    <path d="M313 351 a 17 17 0 0 1 34 0 z" fill="#34d399" opacity="0.65"/>
+    <!-- avionics bay -->
+    <rect x="300" y="398" width="60" height="52" fill="#0f172a" opacity="0.6"/>
+    <rect x="312" y="410" width="36" height="28" rx="3" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="330" cy="424" r="5" fill="#38bdf8"/>
+    <!-- fins -->
+    <path d="M300 470 L262 540 L300 528 Z" fill="#f87171"/>
+    <path d="M360 470 L398 540 L360 528 Z" fill="#f87171"/>
+    <!-- gimbal mount -->
+    <rect x="306" y="528" width="48" height="18" rx="4" fill="#475569"/>
+    <!-- gimballed nozzle, deflected -->
+    <g transform="rotate(14 330 546)">
+      <path d="M314 546 h32 l12 34 h-56 z" fill="#64748b" stroke="#cbd5e1" stroke-width="2"/>
+      <path d="M330 580 L300 720 L360 720 Z" fill="url(#tvflame)"/>
+    </g>
+    <circle cx="330" cy="546" r="6" fill="#fbbf24"/>
+  </g>
+
+  <!-- gimbal angle annotation -->
+  <line x1="352" y1="512" x2="392" y2="672" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>
+  <line x1="352" y1="512" x2="452" y2="648" stroke="#fbbf24" stroke-width="3"/>
+  <path d="M382 596 a 84 84 0 0 1 26 -16" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  <text x="418" y="600" font-family="ui-monospace,monospace" font-size="22" fill="#fbbf24">δ gimbal</text>
+  <text x="418" y="626" font-family="ui-monospace,monospace" font-size="16" fill="#94a3b8">2-axis servo</text>
+
+  <!-- IMU feedback loop -->
+  <g font-family="ui-monospace,monospace">
+    <rect x="596" y="212" width="130" height="52" rx="8" fill="#16233a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="616" y="244" font-size="19" fill="#7dd3fc">gyro/IMU</text>
+    <rect x="770" y="212" width="130" height="52" rx="8" fill="#16233a" stroke="#38bdf8" stroke-width="2"/>
+    <text x="806" y="244" font-size="19" fill="#7dd3fc">PID</text>
+    <rect x="944" y="212" width="150" height="52" rx="8" fill="#16233a" stroke="#fbbf24" stroke-width="2"/>
+    <text x="964" y="244" font-size="19" fill="#fbbf24">servo gimbal</text>
+
+    <g stroke="#475569" stroke-width="2.5" fill="none">
+      <path d="M726 238 h38"/><path d="M900 238 h38"/>
+      <path d="M1019 264 v40 h-363 v-40"/>
+    </g>
+    <path d="M758 232 l14 6 l-14 6 z" fill="#475569"/>
+    <path d="M932 232 l14 6 l-14 6 z" fill="#475569"/>
+    <path d="M650 272 l6 -14 l6 14 z" fill="#475569"/>
+    <text x="742" y="326" font-size="16" fill="#64748b">attitude feedback</text>
+  </g>
+
+  <!-- thrust curve -->
+  <g font-family="ui-monospace,monospace">
+    <text x="620" y="410" font-size="22" fill="#e2e8f0">static test — thrust curve</text>
+    <line x1="628" y1="620" x2="1120" y2="620" stroke="#4b5563" stroke-width="2"/>
+    <line x1="628" y1="440" x2="628" y2="620" stroke="#4b5563" stroke-width="2"/>
+    <path d="M628 620 L660 462 L692 452 L740 496 L800 536 L880 570 L980 598 L1080 616 L1120 619"
+          fill="none" stroke="#fb923c" stroke-width="4"/>
+    <path d="M628 620 L660 462 L692 452 L740 496 L800 536 L880 570 L980 598 L1080 616 L1120 619 L1120 620 L628 620 Z"
+          fill="#fb923c" opacity="0.14"/>
+    <line x1="628" y1="452" x2="1120" y2="452" stroke="#f87171" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="692" cy="452" r="6" fill="#f87171"/>
+    <text x="708" y="444" font-size="21" fill="#f87171">384 N peak</text>
+    <text x="840" y="512" font-size="21" fill="#fdba74">320 N·s total impulse</text>
+    <text x="628" y="650" font-size="16" fill="#64748b">time →</text>
+    <text x="566" y="446" font-size="16" fill="#64748b">thrust</text>
+  </g>
+
+  <!-- footer chips -->
+  <g font-family="ui-monospace,monospace" font-size="17">
+    <rect x="60" y="676" width="200" height="34" rx="17" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <text x="80" y="699" fill="#fb923c">thrust vectoring</text>
+    <rect x="274" y="676" width="196" height="34" rx="17" fill="none" stroke="#fb923c" stroke-width="2"/>
+    <text x="294" y="699" fill="#fb923c">parachute recovery</text>
+  </g>
+</svg>

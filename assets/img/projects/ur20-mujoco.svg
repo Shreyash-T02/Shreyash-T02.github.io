@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="UR20 manipulator simulated in MuJoCo with Jacobian and inverse kinematics convergence">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1626"/>
+      <stop offset="100%" stop-color="#16233a"/>
+    </linearGradient>
+    <linearGradient id="link" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#1e2d47" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+
+  <!-- header -->
+  <text x="60" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" fill="#38bdf8" letter-spacing="3">ROS 2 HUMBLE · MuJoCo 3.x</text>
+  <text x="60" y="132" font-family="Georgia,serif" font-size="44" fill="#e2e8f0">UR20 Assembly Cell</text>
+  <line x1="60" y1="158" x2="270" y2="158" stroke="#fbbf24" stroke-width="4"/>
+
+  <!-- ground / conveyor -->
+  <rect x="90" y="628" width="560" height="14" rx="7" fill="#243550"/>
+  <rect x="150" y="642" width="18" height="46" fill="#1c2a42"/>
+  <rect x="560" y="642" width="18" height="46" fill="#1c2a42"/>
+
+  <!-- workpiece: washing machine drum -->
+  <ellipse cx="565" cy="560" rx="62" ry="18" fill="#1f3050" stroke="#475d80" stroke-width="2"/>
+  <path d="M503 560v52a62 18 0 0 0 124 0v-52" fill="#1a2b45" stroke="#475d80" stroke-width="2"/>
+  <ellipse cx="565" cy="560" rx="40" ry="11" fill="none" stroke="#64748b" stroke-width="2"/>
+  <ellipse cx="565" cy="560" rx="20" ry="6" fill="none" stroke="#64748b" stroke-width="2"/>
+
+  <!-- robot base -->
+  <path d="M170 628h100l-14-46h-72z" fill="#334867"/>
+  <rect x="186" y="556" width="68" height="30" rx="6" fill="#3d5478"/>
+
+  <!-- arm linkage -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M220 560 L220 452" stroke="#0b1120" stroke-width="34"/>
+    <path d="M220 452 L352 322" stroke="#0b1120" stroke-width="34"/>
+    <path d="M352 322 L498 300" stroke="#0b1120" stroke-width="30"/>
+    <path d="M498 300 L556 372" stroke="#0b1120" stroke-width="26"/>
+
+    <path d="M220 560 L220 452" stroke="url(#link)" stroke-width="24"/>
+    <path d="M220 452 L352 322" stroke="url(#link)" stroke-width="24"/>
+    <path d="M352 322 L498 300" stroke="url(#link)" stroke-width="20"/>
+    <path d="M498 300 L556 372" stroke="url(#link)" stroke-width="16"/>
+  </g>
+
+  <!-- gripper -->
+  <g stroke="#fbbf24" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M556 372 L586 408"/>
+    <path d="M586 408 L566 432"/>
+    <path d="M586 408 L612 424"/>
+  </g>
+
+  <!-- joints -->
+  <g>
+    <circle cx="220" cy="560" r="17" fill="#16233a" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="220" cy="452" r="17" fill="#16233a" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="352" cy="322" r="16" fill="#16233a" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="498" cy="300" r="14" fill="#16233a" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="556" cy="372" r="12" fill="#16233a" stroke="#94a3b8" stroke-width="4"/>
+  </g>
+
+  <!-- DH frame at elbow -->
+  <g stroke-width="3">
+    <line x1="352" y1="322" x2="418" y2="322" stroke="#f87171"/>
+    <line x1="352" y1="322" x2="352" y2="256" stroke="#34d399"/>
+    <text x="424" y="328" font-family="ui-monospace,monospace" font-size="19" fill="#f87171">x₃</text>
+    <text x="332" y="248" font-family="ui-monospace,monospace" font-size="19" fill="#34d399">z₃</text>
+  </g>
+
+  <!-- end effector frame + label -->
+  <circle cx="586" cy="408" r="5" fill="#fbbf24"/>
+  <line x1="586" y1="408" x2="700" y2="470" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="708" y="468" font-family="ui-monospace,monospace" font-size="21" fill="#fbbf24">/fk/ee_pose</text>
+  <text x="708" y="494" font-family="ui-monospace,monospace" font-size="17" fill="#94a3b8">500 Hz joint states</text>
+
+  <!-- right panel: Jacobian -->
+  <text x="800" y="222" font-family="ui-monospace,monospace" font-size="22" fill="#e2e8f0">J(q) ∈ ℝ⁶ˣ⁶</text>
+  <g>
+    <rect x="792" y="238" width="8" height="152" fill="#64748b"/>
+    <rect x="792" y="238" width="30" height="8" fill="#64748b"/>
+    <rect x="792" y="382" width="30" height="8" fill="#64748b"/>
+    <rect x="1090" y="238" width="8" height="152" fill="#64748b"/>
+    <rect x="1068" y="238" width="30" height="8" fill="#64748b"/>
+    <rect x="1068" y="382" width="30" height="8" fill="#64748b"/>
+  </g>
+  <g fill="#38bdf8">
+    <rect x="836" y="248" width="32" height="20" rx="3" opacity="0.85"/><rect x="876" y="248" width="32" height="20" rx="3" opacity="0.35"/><rect x="916" y="248" width="32" height="20" rx="3" opacity="0.62"/><rect x="956" y="248" width="32" height="20" rx="3" opacity="0.28"/><rect x="996" y="248" width="32" height="20" rx="3" opacity="0.5"/><rect x="1036" y="248" width="32" height="20" rx="3" opacity="0.22"/>
+    <rect x="836" y="276" width="32" height="20" rx="3" opacity="0.4"/><rect x="876" y="276" width="32" height="20" rx="3" opacity="0.78"/><rect x="916" y="276" width="32" height="20" rx="3" opacity="0.3"/><rect x="956" y="276" width="32" height="20" rx="3" opacity="0.66"/><rect x="996" y="276" width="32" height="20" rx="3" opacity="0.24"/><rect x="1036" y="276" width="32" height="20" rx="3" opacity="0.55"/>
+    <rect x="836" y="304" width="32" height="20" rx="3" opacity="0.6"/><rect x="876" y="304" width="32" height="20" rx="3" opacity="0.26"/><rect x="916" y="304" width="32" height="20" rx="3" opacity="0.88"/><rect x="956" y="304" width="32" height="20" rx="3" opacity="0.36"/><rect x="996" y="304" width="32" height="20" rx="3" opacity="0.7"/><rect x="1036" y="304" width="32" height="20" rx="3" opacity="0.32"/>
+    <rect x="836" y="332" width="32" height="20" rx="3" opacity="0.3"/><rect x="876" y="332" width="32" height="20" rx="3" opacity="0.58"/><rect x="916" y="332" width="32" height="20" rx="3" opacity="0.24"/><rect x="956" y="332" width="32" height="20" rx="3" opacity="0.8"/><rect x="996" y="332" width="32" height="20" rx="3" opacity="0.34"/><rect x="1036" y="332" width="32" height="20" rx="3" opacity="0.64"/>
+    <rect x="836" y="360" width="32" height="20" rx="3" opacity="0.52"/><rect x="876" y="360" width="32" height="20" rx="3" opacity="0.3"/><rect x="916" y="360" width="32" height="20" rx="3" opacity="0.68"/><rect x="956" y="360" width="32" height="20" rx="3" opacity="0.26"/><rect x="996" y="360" width="32" height="20" rx="3" opacity="0.84"/><rect x="1036" y="360" width="32" height="20" rx="3" opacity="0.4"/>
+  </g>
+  <text x="792" y="424" font-family="ui-monospace,monospace" font-size="18" fill="#94a3b8">manipulability  w = √det(JJᵀ)</text>
+
+  <!-- IK convergence plot -->
+  <text x="792" y="490" font-family="ui-monospace,monospace" font-size="22" fill="#e2e8f0">IK · damped least squares</text>
+  <text x="792" y="518" font-family="ui-monospace,monospace" font-size="18" fill="#94a3b8">λ = 0.05</text>
+  <line x1="800" y1="660" x2="1110" y2="660" stroke="#475569" stroke-width="2"/>
+  <line x1="800" y1="540" x2="800" y2="660" stroke="#475569" stroke-width="2"/>
+  <path d="M800 548 C 850 640, 880 652, 920 656 S 1010 659, 1110 659" fill="none" stroke="#34d399" stroke-width="4"/>
+  <circle cx="1110" cy="659" r="6" fill="#34d399"/>
+  <text x="1004" y="640" font-family="ui-monospace,monospace" font-size="19" fill="#34d399">&lt; 1 mm</text>
+  <text x="800" y="690" font-family="ui-monospace,monospace" font-size="16" fill="#64748b">iterations →</text>
+
+  <!-- footer chips -->
+  <g font-family="ui-monospace,monospace" font-size="17">
+    <rect x="60" y="686" width="132" height="34" rx="17" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <text x="80" y="709" fill="#38bdf8">ros2_control</text>
+    <rect x="206" y="686" width="94" height="34" rx="17" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <text x="226" y="709" fill="#38bdf8">MoveIt</text>
+    <rect x="314" y="686" width="92" height="34" rx="17" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <text x="334" y="709" fill="#38bdf8">Docker</text>
+  </g>
+</svg>

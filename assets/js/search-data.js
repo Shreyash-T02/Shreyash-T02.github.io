@@ -10,403 +10,76 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-projects",
-          title: "Projects",
-          description: "Here&#39;s what I&#39;ve been working on. Check out my recent projects !",
+          title: "projects",
+          description: "Robots, controllers, and the simulations that had to agree with hardware — research first, then the engineering that got me there.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Experience, education, and skills. Download the one-page PDF from the icon on the right.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-a-post-with-plotly-js",
-        
-          title: "a post with plotly.js",
-        
-        description: "this is what included plotly.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2025/03/26/plotly.html";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/12/04/photo-gallery.html";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/05/01/tabs.html";
-          
-        },
-      },{id: "post-a-post-with-typograms",
-        
-          title: "a post with typograms",
-        
-        description: "this is what included typograms code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/04/29/typograms.html";
-          
-        },
-      },{id: "post-a-post-that-can-be-cited",
-        
-          title: "a post that can be cited",
-        
-        description: "this is what a post that can be cited looks like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/04/28/post-citation.html";
-          
-        },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/04/15/pseudocode.html";
-          
-        },
-      },{id: "post-a-post-with-code-diff",
-        
-          title: "a post with code diff",
-        
-        description: "this is how you can display code diffs",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/27/code-diff.html";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/27/advanced-images.html";
-          
-        },
-      },{id: "post-a-post-with-vega-lite",
-        
-          title: "a post with vega lite",
-        
-        description: "this is what included vega lite code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/27/vega-lite.html";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/26/geojson-map.html";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/26/echarts.html";
-          
-        },
-      },{id: "post-a-post-with-chart-js",
-        
-          title: "a post with chart.js",
-        
-        description: "this is what included chart.js code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2024/01/26/chartjs.html";
-          
-        },
-      },{id: "post-a-post-with-tikzjax",
-        
-          title: "a post with TikZJax",
-        
-        description: "this is what included TikZ code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/12/12/tikzjax.html";
-          
-        },
-      },{id: "post-a-post-with-bibliography",
-        
-          title: "a post with bibliography",
-        
-        description: "an example of a blog post with bibliography",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/07/12/post-bibliography.html";
-          
-        },
-      },{id: "post-a-post-with-jupyter-notebook",
-        
-          title: "a post with jupyter notebook",
-        
-        description: "an example of a blog post with jupyter notebook",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/07/04/jupyter-notebook.html";
-          
-        },
-      },{id: "post-a-post-with-custom-blockquotes",
-        
-          title: "a post with custom blockquotes",
-        
-        description: "an example of a blog post with custom blockquotes",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/05/12/custom-blockquotes.html";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-        
-          title: "a post with table of contents on a sidebar",
-        
-        description: "an example of a blog post with table of contents on a sidebar",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/04/25/sidebar-table-of-contents.html";
-          
-        },
-      },{id: "post-a-post-with-audios",
-        
-          title: "a post with audios",
-        
-        description: "this is what included audios could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/04/25/audios.html";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/04/24/videos.html";
-          
-        },
-      },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-        
-          title: "displaying beautiful tables with Bootstrap Tables",
-        
-        description: "an example of how to use Bootstrap Tables",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/03/20/tables.html";
-          
-        },
-      },{id: "post-a-post-with-table-of-contents",
-        
-          title: "a post with table of contents",
-        
-        description: "an example of a blog post with table of contents",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2023/03/20/table-of-contents.html";
-          
-        },
-      },{id: "post-a-post-with-giscus-comments",
-        
-          title: "a post with giscus comments",
-        
-        description: "an example of a blog post with giscus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/external-services/2022/12/10/giscus-comments.html";
-          
-        },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
-      },{id: "post-a-post-with-redirect",
-        
-          title: "a post with redirect",
-        
-        description: "you can also redirect to assets like pdf",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/assets/pdf/example_pdf.pdf";
-          
-        },
-      },{id: "post-a-post-with-diagrams",
-        
-          title: "a post with diagrams",
-        
-        description: "an example of a blog post with diagrams",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/2021/07/04/diagrams.html";
-          
-        },
-      },{id: "post-a-distill-style-blog-post",
-        
-          title: "a distill-style blog post",
-        
-        description: "an example of a distill-style blog post and main elements",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/2021/05/22/distill.html";
-          
-        },
-      },{id: "post-a-post-with-twitter",
-        
-          title: "a post with twitter",
-        
-        description: "an example of a blog post with twitter",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/external-services/2020/09/28/twitter.html";
-          
-        },
-      },{id: "post-a-post-with-disqus-comments",
-        
-          title: "a post with disqus comments",
-        
-        description: "an example of a blog post with disqus comments",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/external-services/2015/10/20/disqus-comments.html";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2015/10/20/math.html";
-          
-        },
-      },{id: "post-a-post-with-code",
-        
-          title: "a post with code",
-        
-        description: "an example of a blog post with some code",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2015/07/15/code.html";
-          
-        },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2015/05/15/images.html";
-          
-        },
-      },{id: "post-a-post-with-formatting-and-links",
-        
-          title: "a post with formatting and links",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/sample-posts/2015/03/15/formatting-and-links.html";
-          
-        },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+        },{id: "news-wrapped-the-thrust-vectored-model-rocket-384-n-peak-thrust-and-320-n-s-total-impulse-across-the-static-test-campaign-rocket",
+          title: 'Wrapped the thrust-vectored model rocket: 384 N peak thrust and 320 N·s total...',
           description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+          section: "News",},{id: "news-started-my-m-s-in-mechanical-engineering-at-usc-and-joined-the-laser-lab-with-prof-keenan-albee-working-on-microgravity-robotics",
+          title: 'Started my M.S. in Mechanical Engineering at USC and joined the LASER lab...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-joined-the-space-engineering-research-center-at-usc-isi-as-a-graduate-student-researcher-on-the-leapfrog-lunar-lander-prototype",
+          title: 'Joined the Space Engineering Research Center at USC ISI as a Graduate Student...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-released-the-ur20-assembly-cell-a-ros-2-mujoco-manipulation-stack-with-damped-least-squares-ik-converging-to-sub-millimetre-error-mechanical-arm",
+          title: 'Released the UR20 assembly cell — a ROS 2 + MuJoCo manipulation stack...',
           description: "",
-          section: "News",},{id: "projects-package-handling-robotic-arm-for-pick-and-place-operations",
-          title: 'Package Handling Robotic Arm for Pick and Place Operations',
-          description: "Design and control of 5 DOF Robotic Manipulator with electro magnetic end effector",
+          section: "News",},{id: "projects-in-space-manipulation-on-a-microgravity-free-flyer",
+          title: 'In-Space Manipulation on a Microgravity Free-Flyer',
+          description: "Implementing a manipulator on an air-bearing free-flyer, with gripper designs and experiments to autonomously identify optimal grasp candidates",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project.html";
+              window.location.href = "/projects/1_microgravity_freeflyer.html";
+            },},{id: "projects-leapfrog-lunar-lander",
+          title: 'Leapfrog Lunar Lander',
+          description: "Test-data analysis and design iteration on a thrust-controlled powered-descent prototype",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_leapfrog_lander.html";
+            },},{id: "projects-ur20-assembly-cell-in-mujoco",
+          title: 'UR20 Assembly Cell in MuJoCo',
+          description: "A full ROS 2 manipulation stack — DH kinematics, geometric Jacobian, and damped least-squares IK — driving a UR20 through washing machine assembly",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_ur20_mujoco.html";
+            },},{id: "projects-5-dof-package-handling-arm",
+          title: '5-DOF Package Handling Arm',
+          description: "A 700 mm reach, 3 kg payload manipulator designed from torque budget to motion plan for end-of-line automation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_package_handling_arm.html";
+            },},{id: "projects-thrust-vectored-model-rocket",
+          title: 'Thrust-Vectored Model Rocket',
+          description: "Active thrust vector control with gyroscope feedback and servo-actuated recovery — 384 N peak thrust, 320 N·s total impulse",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_tvc_rocket.html";
+            },},{id: "projects-flood-rescue-surveillance-quadcopter",
+          title: 'Flood Rescue Surveillance Quadcopter',
+          description: "Model predictive control over a 6-DOF dynamic model, with power and endurance analysis for sustained aerial surveillance",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_quadcopter_mpc.html";
+            },},{id: "projects-formula-student-suspension-amp-steering",
+          title: 'Formula Student — Suspension &amp;amp; Steering',
+          description: "Leading a 12-engineer subsystem across three seasons — design, validation, manufacturing, and correlating track data against the vehicle model",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_fsae_suspension.html";
+            },},{id: "projects-warehouse-tote-carrier-vehicles",
+          title: 'Warehouse Tote-Carrier Vehicles',
+          description: "Designing electric intralogistics vehicles for 100,000+ sq ft warehouses — and the R&amp;D floor that moved me from mechanical design into robotics",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_greendzine_tote_carrier.html";
+            },},{id: "projects-autonomous-mobile-robot-localization-planning-amp-control",
+          title: 'Autonomous Mobile Robot — Localization, Planning &amp;amp; Control',
+          description: "Particle filter localization from LIDAR scan matching, an RRT planner with shortcut smoothing, and dual-axis PID closing the sense–plan–act loop",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_autonomous_mobile_robot.html";
             },},{
         id: 'social-email',
         title: 'email',
@@ -427,13 +100,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/shreyash-thorat-6b372b225", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/Shreyash%20Thorat_Resume_.pdf", "_blank");
         },
       },{
       id: 'light-theme',
