@@ -34,7 +34,7 @@ I joined as a mechanical design engineer and spent my time on the **R&D team, wo
 
 That was the turning point. Watching machines navigate a real facility — dealing with imperfect maps, unpredictable obstacles, and the gap between what a planner assumes and what a floor actually contains — made the mechanical design work feel like one half of a more interesting problem. **This is where I changed direction from mechanical design to robotics.**
 
-Everything I have built since — the [manipulator stack in MuJoCo](/projects/3_ur20_mujoco/), the [autonomous mobile robot](/projects/9_autonomous_mobile_robot/), the [microgravity free-flyer research](/projects/1_microgravity_freeflyer/) — traces back to that floor. The mechanical background did not go to waste; it became the reason I care whether a controller is physically realisable.
+Everything I have built since — the [manipulator stack in MuJoCo]({% link _projects/3_ur20_mujoco.md %}), the [autonomous mobile robot]({% link _projects/9_autonomous_mobile_robot.md %}), the [microgravity free-flyer research]({% link _projects/1_microgravity_freeflyer.md %}) — traces back to that floor. The mechanical background did not go to waste; it became the reason I care whether a controller is physically realisable.
 
 <div class="tech-stack">
   <span>DFMA</span>
