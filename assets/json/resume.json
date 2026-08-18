@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Shreyash Thorat",
-    "label": "Mechanical & Robotics Engineer",
+    "label": "Robotics Engineer — Motion Planning, Control & Simulation",
     "image": "",
     "email": "thorats@usc.edu",
     "phone": "(213) 829-1418",
     "url": "https://shreyash-t02.github.io/",
-    "summary": "Graduate student in Mechanical Engineering at the University of Southern California with strong foundations in robotics, autonomous systems, and AI/ML. Experienced in design, modeling, simulation, and system integration with a proven record of leading projects and contributing to international Formula Student competitions.",
+    "summary": "M.S. Mechanical Engineering student at USC working at the intersection of motion planning, model-based control, and physics simulation. I build the full stack — localization, planning, and control code in ROS 2, validated in MuJoCo and Gazebo, running on hardware I designed in SolidWorks and tested to failure. Currently researching in-space manipulation at USC's LASER lab, implementing a manipulator on a microgravity air-bearing free-flyer.",
     "location": {
       "address": "325 West Adams Blvd",
       "postalCode": "CA 90007",
@@ -19,170 +19,319 @@
         "network": "LinkedIn",
         "username": "shreyash-thorat",
         "url": "https://www.linkedin.com/in/shreyash-thorat-6b372b225/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Shreyash-T02",
+        "url": "https://github.com/Shreyash-T02"
       }
     ]
   },
-  "projects": [
-    {
-      "name": "Model Rocket with Recovery System and Thrust Vectoring",
-      "summary": "Designed and developed a model rocket with an integrated recovery system and thrust vectoring for enhanced performance and stability.",
-      "highlights": [ "Thrust vectoring control","PID Control","CAD Design","3D-Printing"],
-      "startDate": "2023-07-01",
-      "endDate": "2024-05-01",
-      "url": ""
-    },
-    {
-      "name": "Classification of Pressure Vessels using ANN",
-      "summary": "Built a dataset of vessel images and implemented CNN-based classification to distinguish between horizontal, vertical, and spherical vessels for inspection tasks",
-      "highlights": ["Image preprocessing", "CNN model building", "Hyperparameter tuning"],
-      "startDate": "2023-01-01",
-      "endDate": "2023-06-01",
-      "url": ""
-    },
-    {
-      "name": "Real-Time Surveillance Quadcopter for Flood Rescue",
-      "summary": "Led a team project to design and build a quadcopter for real-time aerial surveillance in flood rescue operationss.",
-      "highlights": ["Team leadership", "Sensor integration", "ArduPilot flight control"],
-      "startDate": "2022-01-01",
-      "endDate": "2022-06-01",
-      "url": ""
-    },
-    {
-      "name": "Automatic Trash Bin using Arduino",
-      "summary": "Designed and implemented a low-cost automatic trash bin using Arduino microcontroller and sensors for automated lid operation.",
-      "highlights": ["Arduino programming"],
-      "startDate": "2021-01-01",
-      "endDate": "2021-06-01",
-      "url": ""
-    }
-   
-  ],
   "work": [
+    {
+      "name": "Laboratory for Autonomous Systems in Exploration and Robotics (LASER), USC",
+      "position": "Graduate Student Researcher",
+      "location": "Los Angeles, CA",
+      "url": "",
+      "startDate": "2025-11-01",
+      "summary": "Implementing a manipulator on a microgravity free-flyer air-bearing robot. Developing the experimental setup and optimized gripper designs to characterize grasping strategies, and to autonomously identify optimal grasp candidates for in-space manipulation.",
+      "highlights": [
+        "In-space manipulation",
+        "Grasp characterization",
+        "Gripper design",
+        "Air-bearing free-flyer testbed"
+      ]
+    },
+    {
+      "name": "Space Engineering Research Center, USC Information Sciences Institute",
+      "position": "Graduate Student Researcher",
+      "location": "Los Angeles, CA",
+      "url": "https://www.isi.edu/research-groups-serc/",
+      "startDate": "2025-09-01",
+      "endDate": "2026-01-01",
+      "summary": "Collaborated with the hardware and propulsion teams on the Leapfrog lunar lander prototype — a thrust-controlled vehicle used to study powered descent and landing. Analyzed test results and proposed design iterations to improve landing stability.",
+      "highlights": [
+        "Powered descent & landing",
+        "Test data analysis",
+        "Propulsion hardware integration"
+      ]
+    },
     {
       "name": "GreenDzine Technologies Pvt Ltd",
       "position": "Mechanical Design Engineer",
+      "location": "Bangalore, India",
       "url": "",
       "startDate": "2024-01-01",
-      "endDate": "1955-05-05",
-      "summary": "I contributed to the development of electric intralogistic warehouse vehicles by designing and prototyping mechanical components, overseeing manufacturing processes, and ensuring quality through assembly and testing. I also supported streamlining the production pipeline to improve efficiency for large-scale warehouse operations (up to 100,000 sq. ft).",
-      "highlights": ["Sheet Metal Design, DFMA "]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Orion Racing India (Formula Student Team)",
-      "location": "Mumbai, India",
-      "position": "Suspension & Steering Subsystem Lead",
-      "url": "",
-      "startDate": "2021-01-01",
-      "endDate": "2023-12-12",
-      "summary": "Led the suspension and steering subsystem for a Formula Student electric prototype, contributing to international competitions. Worked on vehicle dynamics, design, and optimization processes to improve overall performance. Also Led the Cost and Manufacturing event in Formula Student, managing cost analysis, process planning, and documentation to optimize design-for-manufacture decisions",
+      "endDate": "2024-05-01",
+      "summary": "Engineered and prototyped mechanical components for electric intralogistics vehicles deployed in warehouses of 100,000+ sq. ft. Applied DFMA principles to improve manufacturability and cut assembly time, and supported the production pipeline from prototype through assembly and testing.",
       "highlights": [
-        "Vehicle Dynamics",
-        "FMEA",
-        "Topology Optimization",
-        "Modal Analysis",
-        "Additive Manufacturing",
-        "FEA",
-        "Reverse Engineering",
-        "Unit & Integration Testing"
+        "DFMA",
+        "Sheet metal design",
+        "Prototype-to-production",
+        "Assembly & test"
       ]
-    }
-  ],
-  
-  "awards": [
-    {
-      "title": "2nd Position at Cost and Manufacturing Event",
-      "date": "2022-07-01",
-      "awarder": "Formula Student Austria",
-      "url": "",
-      "summary": "Recognized for cost optimization and manufacturing excellence."
-    },
-    {
-      "title": "2nd Overall in Electric Category",
-      "date": "2022-01-01",
-      "awarder": "Formula Bharat (India)",
-      "url": "",
-      "summary": "Secured overall 2nd position in the Electric category at Formula Bharat(India)."
-    },
-    {
-      "title": "4th Position in Cost and Manufacturing Event",
-      "date": "2023-07-01",
-      "awarder": "Formula Student East (Hungary)",
-      "url": "",
-      "summary": "Achieved 4th place in cost and manufacturing event among international teams."
     }
   ],
   "education": [
     {
       "institution": "University of Southern California, Viterbi School of Engineering",
-      "location":  "Los Angeles, Ca",
-      "url": "",
+      "location": "Los Angeles, CA",
+      "url": "https://viterbi.usc.edu/",
       "area": "Mechanical Engineering",
       "studyType": "Master of Science",
       "startDate": "2025-08-01",
       "endDate": "2027-05-01",
+      "score": "GPA 3.6",
+      "courses": [
+        "AME 504: Mechatronics",
+        "CSCI 445: Introduction to Robotics",
+        "AME 547: Manufacturing Automation",
+        "AME 525: Linear Algebra in Engineering Sciences"
+      ]
+    },
+    {
+      "institution": "K. J. Somaiya College of Engineering",
+      "location": "Mumbai, India",
+      "url": "https://kjsce.somaiya.edu.in/",
+      "area": "Mechanical Engineering, Minor in Artificial Intelligence & Machine Learning",
+      "studyType": "Bachelor of Technology",
+      "startDate": "2020-07-01",
+      "endDate": "2024-01-01",
       "score": "",
-      "courses": ["Linear Algebra in Engineering Sciences",
-        "Foundations of Robotics"
-    ]
+      "courses": [
+        "Robotics and Automation",
+        "Mechatronics",
+        "Computer Aided Engineering",
+        "Additive Manufacturing"
+      ]
     }
-    
-  ],
-  
-  "certificates": [
-    
   ],
   "publications": [
     {
       "name": "Design and Development of a Model Rocket with Recovery System and Thrust Vectoring for Enhanced Performance and Stability",
-      "publisher": "SSRN Journal (Pre-print)",
+      "publisher": "SSRN (pre-print)",
       "releaseDate": "2024-01-01",
-      "url": "",
-      "summary": "Authored research paper focused on developing a thrust-vectoring model rocket with an integrated recovery system for enhanced stability and performance."
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5012956",
+      "summary": "Thrust-vectored model rocket with an integrated servo-actuated recovery system, covering the control architecture, ground and static test campaign, and stability results."
     }
   ],
+  "projects": [
+    {
+      "name": "UR20 Washing Machine Assembly Cell (MuJoCo + ROS 2)",
+      "summary": "A full ROS 2 Humble simulation of a UR20 manipulator performing top-load washing machine assembly, with physics in MuJoCo 3.x through the mujoco_ros2_control plugin. Implemented DH forward kinematics, a geometric Jacobian with live manipulability reporting, and a damped least-squares IK solver converging to sub-millimeter position error. Fully containerized for reproducibility.",
+      "highlights": [
+        "ROS 2 Humble",
+        "MuJoCo 3.x",
+        "ros2_control",
+        "Damped least-squares IK",
+        "Jacobian & manipulability",
+        "Docker"
+      ],
+      "startDate": "2026-04-01",
+      "url": "https://github.com/Shreyash-T02/UR20-washing-machine-assembly-mujoco"
+    },
+    {
+      "name": "Autonomous Mobile Robot: Localization, Planning & Control",
+      "summary": "Implemented a particle filter localizer on a known 2D map using LIDAR scan matching and low-variance resampling, achieving pose convergence within a few exploratory motions in Gazebo and RViz. Built an RRT motion planner with obstacle-padded collision checking, shortcut smoothing, waypoint densification, and a reactive safety layer monitoring forward LIDAR returns. Deployed a dual-axis PID controller for heading and velocity regulation inside a closed sense-plan-act loop that corrected odometry drift in real time.",
+      "highlights": [
+        "Particle filter localization",
+        "LIDAR scan matching",
+        "RRT motion planning",
+        "Path smoothing",
+        "Dual-axis PID",
+        "ROS / Gazebo / RViz"
+      ],
+      "startDate": "2025-09-01",
+      "endDate": "2025-12-01",
+      "url": "https://github.com/Shreyash-T02/Project_CSCI445"
+    },
+    {
+      "name": "5-DOF Package Handling Robotic Arm",
+      "summary": "Designed a 5-DOF manipulator with 700 mm reach and 3 kg payload for end-of-line pick and place. Performed inverse kinematics to define the reachable workspace and avoid singularities, sized actuators from joint torque and power budgets, and built a ROS 2 + MoveIt control stack validated in Gazebo.",
+      "highlights": [
+        "SolidWorks",
+        "Inverse kinematics",
+        "Joint torque sizing",
+        "ROS 2 & MoveIt",
+        "Gazebo"
+      ],
+      "startDate": "2024-09-01",
+      "endDate": "2025-01-01",
+      "url": ""
+    },
+    {
+      "name": "Model Rocket with Active Thrust Vector Control",
+      "summary": "Led development of a model rocket using servo-gimballed thrust vectoring with gyroscope feedback for flight stability, plus a servo-actuated parachute recovery system. Ground and static tests measured 384 N peak thrust and 320 N·s total impulse while validating TVC response and recovery reliability.",
+      "highlights": [
+        "Thrust vector control",
+        "PID control",
+        "IMU feedback",
+        "CAD & 3D printing",
+        "Static test campaign"
+      ],
+      "startDate": "2024-07-01",
+      "endDate": "2024-12-01",
+      "url": ""
+    },
+    {
+      "name": "Real-Time Surveillance Quadcopter for Flood Rescue",
+      "summary": "Led a quadcopter project for aerial surveillance in flood rescue. Implemented model predictive control over a 6-DOF dynamic model in MATLAB to minimize state error and control effort, and simulated power draw, ESC efficiency, and battery performance to extend endurance.",
+      "highlights": [
+        "Model predictive control",
+        "6-DOF dynamics",
+        "MATLAB/Simulink",
+        "Power & endurance analysis",
+        "Sensor integration"
+      ],
+      "startDate": "2023-06-01",
+      "endDate": "2023-09-01",
+      "url": ""
+    },
+    {
+      "name": "Classification of Pressure Vessels using CNNs",
+      "summary": "Built an image dataset of industrial pressure vessels and trained a convolutional classifier to distinguish horizontal, vertical, and spherical geometries for automated inspection.",
+      "highlights": ["Image preprocessing", "CNN training", "Hyperparameter tuning"],
+      "startDate": "2023-01-01",
+      "endDate": "2023-06-01",
+      "url": ""
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Orion Racing India — Formula Student Team",
+      "location": "Mumbai, India",
+      "position": "Suspension & Steering Subsystem Lead",
+      "url": "",
+      "startDate": "2021-02-01",
+      "endDate": "2023-12-01",
+      "summary": "Led a 12-member subsystem team for an electric Formula Student prototype through design reviews, sprint planning, and cross-department integration. Correlated data acquisition logs from track testing against the theoretical vehicle model to tune the system for driver performance. Also led the Cost and Manufacturing event, owning cost analysis, process planning, and design-for-manufacture decisions.",
+      "highlights": [
+        "Vehicle dynamics",
+        "Data acquisition & model correlation",
+        "FEA & modal analysis",
+        "Topology optimization",
+        "FMEA",
+        "Team leadership"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "2nd Overall — Electric Category",
+      "date": "2022-01-01",
+      "awarder": "Formula Bharat (India)",
+      "url": "",
+      "summary": "Placed 2nd overall in the Electric category against national teams."
+    },
+    {
+      "title": "4th Place — Cost and Manufacturing Event",
+      "date": "2023-07-01",
+      "awarder": "Formula Student East (Hungary)",
+      "url": "",
+      "summary": "Placed 4th among international teams in cost and manufacturing."
+    }
+  ],
+  "certificates": [],
   "skills": [
-   {
-      "name": "Software & Simulation",
+    {
+      "name": "Robotics & Autonomy",
       "level": "",
-      "icon": "",
-      "keywords": ["MATLAB", "Simulink", "Python", "Gazebo", "SolidWorks", "ANSYS", "Fusion 360"]
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "ROS 2",
+        "ROS 1",
+        "MoveIt",
+        "ros2_control",
+        "Kinematics & dynamics",
+        "Motion planning (RRT)",
+        "Particle filter",
+        "Sensor fusion & calibration",
+        "Jacobian / manipulability"
+      ]
     },
     {
-      "name": "Robotics Tools & Libraries",
+      "name": "Control & Estimation",
       "level": "",
-      "icon": "",
-      "keywords": ["ROS2", "ROS1", "Gazebo", "Linux", "GitHub"]
+      "icon": "fa-solid fa-wave-square",
+      "keywords": [
+        "Model predictive control",
+        "PID control",
+        "State estimation",
+        "Trajectory generation",
+        "Vehicle dynamics",
+        "RTOS"
+      ]
     },
     {
-      "name": "Mechanical Engineering", 
+      "name": "Simulation",
       "level": "",
-      "icon": "",
-      "keywords": ["CAD Design", "FEA", "CNC Machining", "Topology Optimization", "Additive Manufacturing", "Mechanics", "Robot Design", "Failure Analysis"] 
+      "icon": "fa-solid fa-cubes",
+      "keywords": ["MuJoCo", "Gazebo", "RViz", "MATLAB", "Simulink", "ANSYS (Workbench, ACP)"]
+    },
+    {
+      "name": "Software",
+      "level": "",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "C++",
+        "NumPy",
+        "Linux",
+        "Git",
+        "Docker",
+        "Bash",
+        "Data structures & algorithms"
+      ]
+    },
+    {
+      "name": "Mechanical Design",
+      "level": "",
+      "icon": "fa-solid fa-gears",
+      "keywords": [
+        "SolidWorks",
+        "CATIA V5",
+        "Fusion 360",
+        "KiCAD",
+        "DFMA",
+        "FEA",
+        "Topology optimization",
+        "Additive manufacturing",
+        "4-axis CNC machining",
+        "3D scanning / metrology",
+        "GD&T"
+      ]
     }
   ],
   "languages": [
-    
     {
       "language": "English",
       "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native",
+      "icon": ""
+    },
+    {
+      "language": "Marathi",
+      "fluency": "Native",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Robotics & Autonomous Systems",
-      "icon": "",
+      "name": "Research Interests",
+      "icon": "fa-solid fa-flask",
       "keywords": [
-        "Robotic Manipulation",
-        "Mobile Manipulation",
-        "Deep Reinforcement Learning",
-        "ROS","Robotics Validation & Testing",
-        "Robotic Manufacturing"     
+        "Robotic manipulation",
+        "Planning under uncertainty",
+        "Model-based control",
+        "Sim-to-real transfer",
+        "Space & microgravity robotics",
+        "Robotic manufacturing"
       ]
     }
   ],
   "references": []
-  
 }

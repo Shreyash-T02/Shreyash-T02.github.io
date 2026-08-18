@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Free-flying microgravity robot with manipulator, showing reaction torque coupling and belief uncertainty">
+  <defs>
+    <linearGradient id="mgbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#131d36"/>
+    </linearGradient>
+    <radialGradient id="plume" cx="0.5" cy="0" r="1">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="belief" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#mgbg)"/>
+
+  <!-- starfield -->
+  <g fill="#cbd5e1">
+    <circle cx="120" cy="210" r="2" opacity="0.7"/><circle cx="300" cy="120" r="1.6" opacity="0.5"/>
+    <circle cx="520" cy="180" r="2.2" opacity="0.65"/><circle cx="880" cy="120" r="1.7" opacity="0.55"/>
+    <circle cx="1050" cy="230" r="2" opacity="0.6"/><circle cx="200" cy="420" r="1.5" opacity="0.4"/>
+    <circle cx="1130" cy="470" r="1.8" opacity="0.5"/><circle cx="700" cy="90" r="1.5" opacity="0.45"/>
+    <circle cx="960" cy="600" r="1.6" opacity="0.4"/><circle cx="150" cy="640" r="1.8" opacity="0.45"/>
+  </g>
+
+  <!-- header -->
+  <text x="60" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" fill="#a78bfa" letter-spacing="3">USC LASER · RESEARCH</text>
+  <text x="60" y="132" font-family="Georgia,serif" font-size="44" fill="#e2e8f0">Microgravity Free-Flyer</text>
+  <line x1="60" y1="158" x2="270" y2="158" stroke="#fbbf24" stroke-width="4"/>
+
+  <!-- belief uncertainty ellipse -->
+  <ellipse cx="470" cy="430" rx="240" ry="170" fill="url(#belief)"/>
+  <ellipse cx="470" cy="430" rx="196" ry="138" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="9 8" opacity="0.75"/>
+  <ellipse cx="470" cy="430" rx="120" ry="86" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6 7" opacity="0.5"/>
+  <text x="238" y="278" font-family="ui-monospace,monospace" font-size="19" fill="#c4b5fd">state belief  Σ</text>
+
+  <!-- thruster plumes -->
+  <g>
+    <path d="M356 402 l-52 -22 v44 z" fill="url(#plume)"/>
+    <path d="M584 402 l52 -22 v44 z" fill="url(#plume)" transform="rotate(180 584 402)"/>
+  </g>
+
+  <!-- free-flyer body -->
+  <rect x="368" y="366" width="200" height="140" rx="18" fill="#1e2c48" stroke="#64748b" stroke-width="3"/>
+  <rect x="392" y="392" width="70" height="46" rx="6" fill="#0f1a2e" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="427" cy="415" r="12" fill="#38bdf8" opacity="0.55"/>
+  <circle cx="427" cy="415" r="5" fill="#e0f2fe"/>
+  <text x="482" y="410" font-family="ui-monospace,monospace" font-size="15" fill="#94a3b8">VISION</text>
+  <rect x="482" y="420" width="62" height="7" rx="3" fill="#334867"/>
+  <rect x="482" y="434" width="44" height="7" rx="3" fill="#334867"/>
+
+  <!-- solar panels -->
+  <g stroke="#475569" stroke-width="2">
+    <rect x="286" y="384" width="76" height="46" rx="4" fill="#16305a"/>
+    <rect x="574" y="384" width="76" height="46" rx="4" fill="#16305a"/>
+    <line x1="311" y1="384" x2="311" y2="430"/><line x1="336" y1="384" x2="336" y2="430"/>
+    <line x1="599" y1="384" x2="599" y2="430"/><line x1="624" y1="384" x2="624" y2="430"/>
+  </g>
+
+  <!-- thruster nozzles -->
+  <g fill="#334867" stroke="#7dd3fc" stroke-width="2">
+    <rect x="356" y="386" width="14" height="32" rx="3"/>
+    <rect x="566" y="386" width="14" height="32" rx="3"/>
+    <rect x="452" y="500" width="32" height="14" rx="3"/>
+  </g>
+
+  <!-- manipulator arm reaching a handrail -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M468 366 L500 288 L592 236" stroke="#0b1120" stroke-width="26"/>
+    <path d="M468 366 L500 288 L592 236" stroke="#fbbf24" stroke-width="16"/>
+  </g>
+  <circle cx="500" cy="288" r="13" fill="#16233a" stroke="#fbbf24" stroke-width="4"/>
+  <g stroke="#fde68a" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M592 236 L620 216"/><path d="M592 236 L618 254"/>
+  </g>
+
+  <!-- handrail / target -->
+  <rect x="622" y="196" width="150" height="16" rx="8" fill="#475569"/>
+  <rect x="628" y="212" width="12" height="26" fill="#334155"/>
+  <rect x="754" y="212" width="12" height="26" fill="#334155"/>
+  <text x="640" y="180" font-family="ui-monospace,monospace" font-size="18" fill="#94a3b8">grapple target</text>
+
+  <!-- reaction coupling annotation -->
+  <path d="M300 540 q 88 46 176 10" fill="none" stroke="#f87171" stroke-width="3" stroke-dasharray="7 6"/>
+  <path d="M470 546 l16 4 l-12 12 z" fill="#f87171"/>
+  <text x="248" y="592" font-family="ui-monospace,monospace" font-size="21" fill="#f87171">arm torque → base reaction</text>
+  <text x="248" y="620" font-family="ui-monospace,monospace" font-size="17" fill="#94a3b8">no ground to react against</text>
+
+  <!-- right readout panel -->
+  <g font-family="ui-monospace,monospace">
+    <line x1="828" y1="330" x2="828" y2="620" stroke="#334155" stroke-width="2"/>
+    <text x="856" y="348" font-size="22" fill="#e2e8f0">6-DOF free-floating base</text>
+    <text x="856" y="392" font-size="19" fill="#94a3b8">· momentum is conserved —</text>
+    <text x="876" y="418" font-size="19" fill="#94a3b8">every grasp moves the robot</text>
+    <text x="856" y="462" font-size="19" fill="#94a3b8">· contact dynamics dominate</text>
+    <text x="856" y="506" font-size="19" fill="#94a3b8">· plan under state uncertainty</text>
+    <text x="856" y="562" font-size="19" fill="#a78bfa">operating in uncertain</text>
+    <text x="856" y="588" font-size="19" fill="#a78bfa">environments</text>
+  </g>
+
+  <!-- footer chips -->
+  <g font-family="ui-monospace,monospace" font-size="17">
+    <rect x="60" y="672" width="180" height="34" rx="17" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="80" y="695" fill="#a78bfa">hardware design</text>
+    <rect x="254" y="672" width="150" height="34" rx="17" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="274" y="695" fill="#a78bfa">estimation</text>
+    <rect x="418" y="672" width="132" height="34" rx="17" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="438" y="695" fill="#a78bfa">planning</text>
+  </g>
+</svg>

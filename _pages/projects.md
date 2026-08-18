@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Projects
+title: projects
 permalink: /projects/
-description: Here's what I've been working on. Check out my recent projects !
+description: Robots, controllers, and the simulations that had to agree with hardware — research first, then the engineering that got me there.
 nav: true
-nav_order: 3
-display_categories: [Featured Projects]
+nav_order: 2
+display_categories: [Research, Engineering]
 horizontal: false
 ---
 

@@ -50,7 +50,6 @@ linkedin_username: shreyash-thorat-6b372b225
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: <i class="ai ai-cv"></i> # using academic icons CV icon
-  title: CV
-  url: /assets/pdf/Shreyash%20Thorat_Resume_.pdf
+# NOTE: `custom_social` expects `logo` to be an image FILE PATH — social.liquid renders it
+# as <img src="...">. Putting raw <i> markup there produces a broken image request on every
+# page. The CV lives in the navbar and at /cv/ instead.

@@ -24,6 +24,10 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// Site accent — technical teal/azure, matched to the project artwork.
+$accent-color: #0e7490 !default; // light mode
+$accent-color-bright: #38bdf8 !default; // dark mode
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;

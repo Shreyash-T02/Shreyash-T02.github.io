@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Flood rescue quadcopter with model predictive control prediction horizon and cost function">
+  <defs>
+    <linearGradient id="qcbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1524"/>
+      <stop offset="100%" stop-color="#132436"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e7490" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0c4a6e" stop-opacity="0.85"/>
+    </linearGradient>
+    <pattern id="qcgrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#1c2f45" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#qcbg)"/>
+  <rect width="1200" height="750" fill="url(#qcgrid)"/>
+
+  <!-- header -->
+  <text x="60" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" fill="#22d3ee" letter-spacing="3">MPC · 6-DOF · MATLAB</text>
+  <text x="60" y="132" font-family="Georgia,serif" font-size="44" fill="#e2e8f0">Flood Rescue Quadcopter</text>
+  <line x1="60" y1="158" x2="270" y2="158" stroke="#fbbf24" stroke-width="4"/>
+
+  <!-- flood water -->
+  <path d="M0 630 Q 150 612 300 626 T 600 620 T 900 630 T 1200 618 L1200 750 L0 750 Z" fill="url(#water)"/>
+  <g stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.35">
+    <path d="M80 668 q 30 -10 60 0 t 60 0"/>
+    <path d="M420 690 q 30 -10 60 0 t 60 0"/>
+    <path d="M820 664 q 30 -10 60 0 t 60 0"/>
+  </g>
+  <!-- submerged rooftops -->
+  <path d="M180 630 L232 596 L284 630 Z" fill="#1e293b" opacity="0.9"/>
+  <path d="M640 626 L700 588 L760 626 Z" fill="#1e293b" opacity="0.9"/>
+
+  <!-- reference trajectory + MPC horizon -->
+  <path d="M170 470 C 320 356, 520 400, 700 322" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="9 8"/>
+  <text x="140" y="500" font-family="ui-monospace,monospace" font-size="18" fill="#94a3b8">reference</text>
+
+  <!-- predicted horizon nodes -->
+  <g>
+    <circle cx="392" cy="382" r="8" fill="#22d3ee" opacity="0.95"/>
+    <circle cx="452" cy="368" r="7.5" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="512" cy="366" r="7" fill="#22d3ee" opacity="0.66"/>
+    <circle cx="572" cy="352" r="6.5" fill="#22d3ee" opacity="0.52"/>
+    <circle cx="632" cy="338" r="6" fill="#22d3ee" opacity="0.4"/>
+    <circle cx="692" cy="324" r="5.5" fill="#22d3ee" opacity="0.28"/>
+    <path d="M392 382 L452 368 L512 366 L572 352 L632 338 L692 324" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.6"/>
+  </g>
+  <text x="470" y="424" font-family="ui-monospace,monospace" font-size="19" fill="#22d3ee">prediction horizon N</text>
+
+  <!-- quadcopter -->
+  <g transform="translate(330 382)">
+    <!-- arms -->
+    <g stroke="#cbd5e1" stroke-width="8" stroke-linecap="round">
+      <line x1="-52" y1="-26" x2="52" y2="26"/>
+      <line x1="-52" y1="26" x2="52" y2="-26"/>
+    </g>
+    <!-- body -->
+    <rect x="-26" y="-18" width="52" height="36" rx="9" fill="#1e3a5f" stroke="#7dd3fc" stroke-width="3"/>
+    <!-- camera gimbal -->
+    <circle cx="0" cy="24" r="11" fill="#0f172a" stroke="#fbbf24" stroke-width="3"/>
+    <circle cx="0" cy="24" r="4" fill="#fbbf24"/>
+    <!-- rotors -->
+    <g fill="none" stroke="#38bdf8" stroke-width="3">
+      <ellipse cx="-52" cy="-26" rx="30" ry="8" opacity="0.85"/>
+      <ellipse cx="52" cy="-26" rx="30" ry="8" opacity="0.85"/>
+      <ellipse cx="-52" cy="26" rx="30" ry="8" opacity="0.85"/>
+      <ellipse cx="52" cy="26" rx="30" ry="8" opacity="0.85"/>
+    </g>
+    <g fill="#94a3b8">
+      <circle cx="-52" cy="-26" r="5"/><circle cx="52" cy="-26" r="5"/>
+      <circle cx="-52" cy="26" r="5"/><circle cx="52" cy="26" r="5"/>
+    </g>
+  </g>
+
+  <!-- body frame axes -->
+  <g stroke-width="3">
+    <line x1="330" y1="382" x2="330" y2="316" stroke="#34d399"/>
+    <line x1="330" y1="382" x2="264" y2="382" stroke="#f87171"/>
+    <text x="308" y="308" font-family="ui-monospace,monospace" font-size="17" fill="#34d399">z_b</text>
+    <text x="238" y="376" font-family="ui-monospace,monospace" font-size="17" fill="#f87171">x_b</text>
+  </g>
+
+  <!-- camera FOV -->
+  <path d="M330 412 L214 596 L446 596 Z" fill="#fbbf24" opacity="0.09"/>
+  <path d="M330 412 L214 596 M330 412 L446 596" stroke="#fbbf24" stroke-width="2" stroke-dasharray="7 6" opacity="0.55" fill="none"/>
+  <text x="256" y="626" font-family="ui-monospace,monospace" font-size="17" fill="#fbbf24">surveillance FOV</text>
+
+  <!-- right panel: cost function + endurance -->
+  <g font-family="ui-monospace,monospace">
+    <line x1="800" y1="192" x2="800" y2="600" stroke="#243550" stroke-width="2"/>
+
+    <text x="828" y="212" font-size="22" fill="#e2e8f0">MPC objective</text>
+    <rect x="828" y="232" width="316" height="76" rx="8" fill="#0f1c2e" stroke="#22d3ee" stroke-width="2"/>
+    <text x="848" y="266" font-size="20" fill="#7dd3fc">min Σ ‖x−x_ref‖²_Q</text>
+    <text x="884" y="294" font-size="20" fill="#7dd3fc">+ ‖u‖²_R</text>
+    <text x="828" y="336" font-size="16" fill="#64748b">state error vs. control effort</text>
+
+    <text x="828" y="392" font-size="22" fill="#e2e8f0">endurance model</text>
+    <g>
+      <text x="828" y="428" font-size="18" fill="#94a3b8">battery discharge</text>
+      <line x1="828" y1="520" x2="1144" y2="520" stroke="#334155" stroke-width="2"/>
+      <path d="M828 440 C 900 452, 1000 470, 1080 500 L1144 516" fill="none" stroke="#34d399" stroke-width="3.5"/>
+      <text x="828" y="552" font-size="18" fill="#94a3b8">ESC efficiency</text>
+      <path d="M828 588 C 920 566, 1010 572, 1144 590" fill="none" stroke="#fbbf24" stroke-width="3.5"/>
+    </g>
+  </g>
+
+  <!-- footer chips -->
+  <g font-family="ui-monospace,monospace" font-size="17">
+    <rect x="60" y="676" width="176" height="34" rx="17" fill="none" stroke="#22d3ee" stroke-width="2"/>
+    <text x="80" y="699" fill="#22d3ee">6-DOF dynamics</text>
+    <rect x="250" y="676" width="150" height="34" rx="17" fill="none" stroke="#22d3ee" stroke-width="2"/>
+    <text x="270" y="699" fill="#22d3ee">Simulink</text>
+    <rect x="414" y="676" width="166" height="34" rx="17" fill="none" stroke="#22d3ee" stroke-width="2"/>
+    <text x="434" y="699" fill="#22d3ee">team lead</text>
+  </g>
+</svg>
